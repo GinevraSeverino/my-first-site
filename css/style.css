@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
 
-    background-image: url("../gallery/roma0.jpg");
+    background-image: url("roma0.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,33 +36,37 @@ p {
     text-align: justify;
 }
 
-
-/* MAPPA ROMA            */
+/* MAPPA ROMA */
 .rome-map {
     position: relative;
     width: 100%;
     max-width: 900px;
-    aspect-ratio: 1 / 1;
+    height: 600px;
+
     margin: 40px auto;
-    background-image: url("../mappa_roma.png");
+
+    background-image: url("mappa_roma.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+/* DISTRETTI */
 .district {
     position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgba(255,0,0,0.35);
+    background: rgba(255, 0, 0, 0.35);
+
     transform: translate(-50%, -50%);
     transition: all 0.3s ease;
+
     text-decoration: none;
 }
 
 .district:hover {
-    background: rgba(255,0,0,0.8);
+    background: rgba(255, 0, 0, 0.8);
     transform: translate(-50%, -50%) scale(1.3);
 }
 
@@ -71,9 +75,11 @@ p {
     position: absolute;
     top: -35px;
     left: -20px;
+
     background: white;
     padding: 5px 10px;
     border-radius: 5px;
+
     color: black;
     white-space: nowrap;
 }
@@ -82,61 +88,14 @@ p {
     display: block;
 }
 
-/* Posizioni dei quartieri */
-/* Posizioni dei quartieri analizzati */
-
-.trastevere {
-    left: 36%;
-    top: 41%;
-}
-
-.prati {
-    left: 46%;
-    top: 23%;
-}
-
-.trevi {
-    left: 48%;
-    top: 44%;
-}
-
-.testaccio {
-    left: 44%;
-    top: 53%;
-}
-
-.sanlorenzo {
-    left: 57%;
-    top: 41%;
-}
-
-/* Parioli sopra Q.II */
-.parioli {
-    left: 52%;
-    top: 28%;
-}
-
-/* EUR sopra Q.XXXII */
-.eur {
-    left: 52%;
-    top: 70%;
-}
-
-/* San Basilio sopra Q.XXX */
-.sanbasilio {
-    left: 76%;
-    top: 18%;
-}
-
-/* Nomentano su Q.V */
-.nomentano {
-    left: 60%;
-    top: 45%;
-}
-
-/* Ardeatino sopra Q.XX */
-.ardeatino {
-    left: 58%;
-    top: 62%;
-}
-
+/* POSIZIONI */
+.trastevere { left: 36%; top: 41%; }
+.prati { left: 46%; top: 23%; }
+.trevi { left: 48%; top: 44%; }
+.testaccio { left: 44%; top: 53%; }
+.sanlorenzo { left: 57%; top: 41%; }
+.parioli { left: 52%; top: 28%; }
+.eur { left: 52%; top: 70%; }
+.sanbasilio { left: 76%; top: 18%; }
+.nomentano { left: 60%; top: 45%; }
+.ardeatino { left: 58%; top: 62%; }
